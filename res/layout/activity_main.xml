@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:id="@+id/test_main"
+    tools:context=".MainActivity" >
+       
+
+     <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    
+        android:src="@drawable/psb"
+        android:id="@+id/background"
+        
+        />
+    
+        <com.example.tagtest.view.TagImageView
+      android:id="@+id/container"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+       android:background="@color/transparent" 
+       android:layout_alignParentTop="true"
+       
+      >
+  </com.example.tagtest.view.TagImageView>
+
+  
+    
+
+</RelativeLayout>

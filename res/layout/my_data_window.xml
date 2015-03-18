@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f39700"
+            android:gravity="center"
+            android:text="添加标签"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/hint_content"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/title_text"
+            android:background="#eeeeee" >
+
+            <TextView
+                android:id="@+id/change_type_text_attribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:text="标签名："
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@id/change_type_text_attribute"
+                android:imeOptions="actionDone"
+                android:padding="5dip"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/hint_content"
+            android:background="#dcdcdc" >
+
+            <TextView
+                android:id="@+id/text_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_confirme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
